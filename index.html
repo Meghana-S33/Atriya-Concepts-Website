@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery (Required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <title>Atriya Concepts</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container_content">
+        <div class="container">
+
+          <div class="icon flex1">
+            <div class="box">
+              <img src="images\atriya-concepts-logo.jpg" alt="Logo" height="50px" width="100px">
+            </div>
+
+            <div class="icon">
+              <a href="https://wa.me/+917760005282" target="_blank"><i class="fa fa-whatsapp"></i></a>
+              <a href="https://www.instagram.com/atriya_concepts?igsh=MTFoeWxiajlhYTRhNQ==" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="https://youtube.com/@atriyaconcepts?si=wSnCzsKLFkwZVj3e" target="_blank"><i class="fa fa-youtube"></i></a>
+              <a href="mailto:atriyaconcepts@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+          <hr>
+
+          <nav>
+            <div class="brand">
+              <h1>Atriya Concepts</h1>
+            </div>
+
+            <ul id="menu">
+              <li><a href="#HOME">HOME</a></li>
+              <li><a href="#ABOUT">ABOUT</a></li>
+              <li><a href="#PROJECTS">PROJECTS</a></li>
+              <li><a href="#SERVICES">SERVICES</a></li>
+            </ul>
+            <i id="icon" class="fa fa-bars"></i>
+          </nav>
+
+          <div class="home">
+            <h3>ATRIYA CONCEPTS</h3>
+            <h1>Interior Design <br> Studio</h1>
+
+            <div class="item grid">
+
+              <div class="item_box flex">
+                <img src="images\i1.png" width="80px">
+                <div class="text">
+                  <a>Architecture</a>
+                  <p>Designing the Future, One structure at a Time</p>
+                </div>
+              </div>
+
+              <div class="item_box flex">
+                <img src="images/i2.png" width="80px">
+                <div class="text">
+                  <a>Interior Design</a>
+                  <p>Interiors that reflect your style</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      //let bar = document.getElementById("icon");
+      //let menu = document.getElementById("menu");
+
+      //bar.addEventListener("click", function() {
+        //if (bar.className === "fa fa-bars") {
+          //bar.className = "fa fa-times";
+          //menu.style.right = 0;
+        //} else {
+          //bar.className = "fa fa-bars";
+          //menu.style.right = "-1000px";
+        //}
+      //});
+
+      document.getElementById('icon').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+      });
+    </script>
+
+    <section class="about" id="ABOUT">
+      <div class="a-container flex1">
+
+        <div class="a-left">
+          <div class="a-img">
+            <img src="images/m5.jpeg" alt="Main Image">
+          </div>
+        </div>
+
+        <div class="a-right">
+          <h2>ABOUT</h2>
+
+          <button class="accordion"> <label>1. Why Us?</label> </button>
+          <div class="panel active">
+            <p>We specialize in executing all types of interior designs, seamlessly blending aesthetics and functionality to create spaces that reflect your unique vision.</p>
+          </div>
+
+          <button class="accordion"> <label>2. Why Choose Us?</label> </button>
+          <div class="panel">
+            <p>Experienced Team: A passionate team of designers and vendors.<br>
+              Client-Centric Approach: Your satisfaction is our top priority.<br>
+              Attention to Detail: Every element is meticulously crafted.<br>
+              Timely Delivery: We respect your time and commitments.
+            </p>
+          </div>
+
+          <button class="accordion"> <label>3. What We Offer?</label> </button>
+          <div class="panel">
+            <p>Custom Design: Tailored solutions to meet your unique needs.<br>
+              Space Planning: Optimize layouts for maximum efficiency and comfort.<br>
+              Sustainable Practices: Eco-friendly materials and designs for a greener future.<br>
+              Project Management: Seamless execution from concept to completion.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i=0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <section class="projects" id="PROJECTS">
+      <div class="container">
+
+        <h2>PROJECTS</h2> <br><br>
+
+        <h3>MEGHA RESIDENCE</h3>
+        <div class="owl-carousel owl-theme">
+          
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m1.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Breakfast Counter</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m2.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Dining Area</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m3.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Kitchen</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m4.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Living Area</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m5.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Living Area</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m6.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Bedroom 1</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m7.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Bedroom 2</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m8.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Bedroom 3</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m9.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Bathroom</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\m10.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Megha Residence</label><br>
+              <p>Balcony</p>
+            </div>
+          </div>
+
+        </div> <br><br>
+
+        <h3>USHA MOHAN RESIDENCE</h3>
+        <div class="owl-carousel owl-theme">
+          
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u1.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Living Area</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u2.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Living Area</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u3.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Dining Area</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u4.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Study Room</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u5.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Passage</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u6.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Bedroom 1</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u7.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Bedroom 2</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u8.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Bedroom 3</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u9.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Bathroom</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box flex">
+              <div class="img">
+                <img src="images\u10.jpeg" alt="">
+              </div>
+            </div>
+            <div class="text">
+              <label>Usha Mohan Residence</label><br>
+              <p>Balcony</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function(){
+          $(".owl-carousel").owlCarousel({
+              loop: true,            // Infinite loop
+              margin: 10,            // Space between images
+              nav: true,             // Show navigation arrows
+              dots: false,            // Show dots
+              autoplay: true,        // Auto slide
+              autoplayTimeout: 2000, // 2 seconds per slide
+              autoplayHoverPause: true,
+              responsive: {
+                  0: { items: 1 },   // 1 item for small screens
+                  600: { items: 2 }, // 2 items for medium screens
+                  1000: { items: 3 } // 3 items for large screens
+              }
+          });
+      });
+    </script>
+
+    <section class="services" id="SERVICES">
+      <h2>SERVICES</h2> <br><br>
+      <div class="s-container flex1">
+        <div class="s-right"><br>
+
+        <h3 class="sh">WHAT WE ARE PROVIDING</h3>
+
+          <div class="s-top">
+            <div class="s-box">
+              <img src="images/s1.png" alt="Designing" class="sd">
+              <h3 class="s-h3">Designing</h3>
+            </div>
+            <div class="s-box">
+              <img src="images/s3.png" alt="Execution" class="se">
+              <h3 class="s-h3">Execution</h3>
+            </div>
+          </div>
+
+          <div class="s-bottom">
+            <h3>Ready to start your home decorating project?</h3>
+            <p>Take the first step towards transforming your home by reaching out to us for a consultation. Let us embark on this exciting journey together to create a space that truly represents your style, personality and aspirations.</p>
+            <a href="quote.html" class="btn" target="_blank">SCHEDULE YOUR CALL</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>
